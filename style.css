@@ -1,0 +1,38 @@
+body {
+    /*color:black;*/
+    background-color:white;
+    /*background-image:url(file:./fond.JPG);
+    background-repeat:repeat;
+    background-attachment: fixed; */
+  }
+  
+  footer{background-color: black;height:60px;margin:60px 0 -10px 0}
+  
+  .contour-titre{background-color: rgb(255, 255, 255); width: 280px;height: 100px;display: block;margin:0 auto;margin-bottom: 30px}
+  .titre{font-style: bold; color: rgb(255, 140, 0);padding:30px 40px 25px 40px; font-family:Comic Sans MS;}
+  .presentation{background-color: #ffffff;border: 1px solid;padding: 10px;font-family:calibri;font-size:22px}
+  .conteneur{width: 100%;padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;max-width: 1000px}
+  /* *, ::after, ::before {box-sizing: border-box;} */
+  .ligne{display: flex;flex-wrap: wrap;margin-right: -15px;margin-left: -15px;}
+  
+  .Stage{background-color: #ffffff;padding: 25px;margin-top:20px; font-family:Comic Sans MS; color: rgb(0, 0, 0);}
+  .Envoyer{background-color: #ffffff;padding: 25px;margin-top:20px;font-family:Comic Sans MS; color: rgb(0, 0, 0);}
+  /*..Fantastique{background-color: #99FFFF;padding: 25px;margin-top:30px;font-family:Comic Sans MS}
+  .Historique{background-color: #99FFCC;padding: 25px;margin-top:30px;font-family:Comic Sans MS}*/
+  
+  
+  /*Pour centrer le texte*/
+  .centre-texte{text-align: center}
+  .aligner-milieu{display: block;margin:0 auto;}
+  /*Pour forcer le centrage du texte de niveau Header1 */
+  h1 { text-align: center }
+  
+  /*Cela va me servir à 'découper' une ligne*/
+  .pleine-largeur{position: relative;width: 100%;padding-right: 15px;padding-left: 15px;flex: 0 0 100%;max-width: 100%}
+  .trois-quarts-largeur{position: relative;width: 100%;padding-right: 15px;padding-left: 15px;flex: 0 0 75%;max-width: 75%}
+  .moitie-largeur{position: relative;width: 100%;padding-right: 15px;padding-left: 15px;flex: 0 0 50%;max-width: 50%}
+  .tiers-largeur{position: relative;width: 100%;padding-right: 15px;padding-left: 15px;flex: 0 0 33.333333%;max-width: 33.333333%}
+  .quart-largeur{position: relative;width: 100%;padding-right: 15px;padding-left: 15px;flex: 0 0 25%;max-width: 25%}
+  
+  /*footer*/
+  .texte-footer{color: white;text-align: center} 
