@@ -10,7 +10,6 @@ body {
   
   .contour-titre{background-color: rgb(255, 255, 255); width: 280px;height: 100px;display: block;margin:0 auto;margin-bottom: 30px; font-family:calibri}
   .titre{font-style: bold; color: rgb(255, 140, 0);padding:30px 40px 25px 40px; font-family:calibri;}
-  
   .ligne{display: flex;flex-wrap: wrap;margin-right: auto;font-family:calibri; margin-left:45px}
   h1 {text-align: center}
   h2{padding: 25px;margin-top:20px; font-family:calibri; color: rgb(0, 0, 0);margin-left: 35px;text-align: center}
@@ -20,13 +19,11 @@ body {
   
   /*Pour centrer le texte*/
   .centre-texte{text-align: center}
-  .aligner-milieu{display: block;margin:0 auto;}
   /*Pour forcer le centrage du texte de niveau Header1 */
  
   
   /*Cela va me servir à 'découper' une ligne*/
   .pleine-largeur{position: relative;width: 100%;padding-right: 15px;padding-left: 15px;flex: 0 0 100%;max-width: 100%}
-  
   /*footer*/
   .texte-footer{color: white;text-align: center} 
 
@@ -84,21 +81,7 @@ body {
     border-radius: 5px;
   }
   
-  .top-level-entry.active:hover {
-    background-color: #555;
-  }
-  
-  /* Sous-menu */
-  .submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none; /* Ne pas l'afficher automatiquement */
-    background-color: white; /* Sous-menu blanc */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    min-width: 200px;
-    margin-top: 5px;
-  }
+
   
   /* Liens dans le sous-menu */
   .submenu-item {
@@ -133,6 +116,10 @@ body {
   
   .auth-container .login-link:hover {
     text-decoration: underline;
+  }
+
+  .auth-container .login-link:active {
+    background-color: rgb(255, 140, 0);
   }
   
   .auth-container .button.primary {
