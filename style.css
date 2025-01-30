@@ -302,4 +302,53 @@ footer {
   margin-top: 20px;
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Menu toggle button pour mobile */
+.menu-toggle {
+  display: none; /* Masqué par défaut */
+  background: #222;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
 
+/* Menu principal en colonne sur mobile */
+@media (max-width: 768px) {
+  .main-menu {
+    display: none; /* Masquer le menu par défaut */
+    flex-direction: column;
+    background-color: #222;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .menu-item {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* Afficher le menu lorsque le bouton est activé */
+  .main-menu.active {
+    display: flex;
+  }
+
+  /* Afficher le bouton menu sur mobile */
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Le menu par défaut pour les écrans plus grands */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Masquer sur les écrans plus larges */
+  }
+}

@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-  <html lang="fr">
-    <head><!-- haut de la page -->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Postuler à une offre de stage</title>
-      <link rel="stylesheet" href="style.css">
-      <div class="logo" style="text-align: center;"> lebonplan</div>
-        <div class="top-navigation-main">
-          <nav class="main-nav" aria-label="Main menu">
-            <ul class="main-menu">
-              <li class="menu-item">
-                <a href="file:./main.HTML" class="top-level-entry active">Acceuil</a>
-              </li>
-              <li class="menu-item">
-                <a href="file:./entreprise.HTML" class="top-level-entry">Entreprise</a>
-              </li>
-              <li class="menu-item">
-                <a href="file:./offres.HTML" class="top-level-entry">Offres</a>
-              </li>
-              <li class="menu-item">
-                <a href="file:./wishlist.HTML" class="top-level-entry">Wishlist</a>
-              </li>
-              <li class="menu-item">
-                <a href="file:./contact.HTML" class="top-level-entry">Contact</a>
-              </li>
-            </ul>
-            <div class="auth-container">
-              <a href="file:./connexion.HTML" class="login-link">Connexion  |</a>
-              <a href="file:./sinscrire.HTML" class="button primary mdn-plus-subscribe">S'incrire</a>
-            </div>
-          </nav>
-        </div>
-        <div class="subpage-info">
-          <span class="current-page">Acceuil > </span>
-        </div>
-      </div>
-    </header>
-    <body>
-      <main class="container">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postuler à une offre de stage</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="logo" style="text-align: center;">lebonplan</div>
+    
+    <div class="top-navigation-main">
+      <nav class="main-nav" aria-label="Main menu">
+        <!-- Bouton pour ouvrir/fermer le menu -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">&#9776;</button>
+
+        <ul class="main-menu" id="main-menu">
+          <li class="menu-item"><a href="file:./main.HTML" class="top-level-entry active">Acceuil</a></li>
+          <li class="menu-item"><a href="file:./entreprise.HTML" class="top-level-entry">Entreprise</a></li>
+          <li class="menu-item"><a href="file:./offres.HTML" class="top-level-entry">Offres</a></li>
+          <li class="menu-item"><a href="file:./wishlist.HTML" class="top-level-entry">Wishlist</a></li>
+          <li class="menu-item"><a href="file:./contact.HTML" class="top-level-entry">Contact</a></li>
+          <div class="auth-container">
+            <a href="file:./connexion.HTML" class="login-link">Connexion  |</a>
+            <a href="file:./sinscrire.HTML" class="button primary mdn-plus-subscribe">S'incrire</a>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="subpage-info">
+      <span class="current-page">Acceuil > </span>
+    </div>
+    <script>
+      // Cibler le bouton hamburger et le menu
+      const menuToggle = document.getElementById('menu-toggle');
+      const mainMenu = document.getElementById('main-menu');
+
+      // Ajouter un événement au clic pour afficher/masquer le menu
+      menuToggle.addEventListener('click', function() {
+        mainMenu.classList.toggle('active'); // Cette ligne ajoutera ou retirera la classe 'active' pour ouvrir/fermer le menu
+      });
+    </script>
+    <!-- Le reste du contenu de la page -->
+    <main class="container">
         <h2>Cette page ne sert à rien</h2>
         <p>Vous pouvez ici ... Rien faire! A bon tu as un compte .... Bin non débrouille toi. D'où tu me connais, moi je te connais pas. </p>
       </main>
