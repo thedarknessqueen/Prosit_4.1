@@ -1,328 +1,207 @@
-<<<<<<< HEAD
+/* Style du header */
+header {
+  background-color: white;
+  
+  padding: 15px;
+}
+
+/* Style du logo*/
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(255, 140, 0);
+}
+
+/* Style de la barre de navigation */
+nav {
+  background: #222;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.auth {
+  float: right;
+}
+.top-navigation-main {
+  background-color: #222222; 
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd
+}
+
+/* Navigation principale */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+  font-size: 14px;
+  color: white; 
+}
+
+/* Menu principal */
+.main-menu {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 25px
+}
+
+/* Liens du menu */
+.top-level-entry {
+  color: white; 
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px;
+  display: inline-block
+}
+
+.top-level-entry:hover {
+  color: rgb(255, 140, 0)
+}
+
+/* L'élément actif devient gris */
+.top-level-entry.active {
+  color: rgb(255, 140, 0); 
+  border-radius: 5px
+}
+
+.top-level-entry.active:hover {
+  background-color: #555
+}
+
+/* Sous-menu */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none; 
+  background-color: white; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  margin-top: 5px
+}
+
+/* Liens dans le sous-menu */
+.submenu-item {
+  text-decoration: none;
+  color: #000000; 
+  padding: 8px 15px;
+  display: block
+}
+
+.submenu-item:hover {
+  background-color: #f1f1f1
+}
+
+/* Afficher sous-menu au clic */
+.menu-item.active > .submenu {
+  display: block
+}
+
+/* Conteneur d'authentification */
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end
+}
+
+.auth-container .login-link {
+  text-decoration: none;
+  color: #ffffff; 
+  margin-right: 15px;
+  font-weight: bold
+}
+
+.auth-container .login-link:hover {
+  text-decoration: underline
+}
+
+.auth-container .button.primary {
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold
+}
+
+.auth-container .button.primary:hover {
+  text-decoration: underline
+}
+
+.auth-container .button.primary:active {
+  background-color: #ffffff
+}
+
+/* Informations de la sous-page */
+.subpage-info {
+  background-color: #d8ecf5;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333
+}
+
+/*bandeau de sous menu*/
+.current-page {
+  font-weight: bold;
+  color: rgba(38, 128, 255, 0.927)
+}
+
+/* Ajouter le séparateur entre les éléments */
+.menu-item:not(:last-child)::after {
+  content: '|';
+  color: #999; 
+  margin-left: 25px
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/* Styles du corps de la page */
 body {
-    /*color:black;*/
-    background-color:white;
-    /*background-image:url(file:./fond.JPG);
-    background-repeat:repeat;
-    background-attachment: fixed; */
-  }
-  
-  footer{background-color: black;height:60px;margin:60px 0 -10px 0;font-family:calibri}
-  
-  .contour-titre{background-color: rgb(255, 255, 255); width: 280px;height: 100px;display: block;margin:0 auto;margin-bottom: 30px; font-family:calibri}
-  .titre{font-style: bold; color: rgb(255, 140, 0);padding:30px 40px 25px 40px; font-family:calibri;}
-  .ligne{display: flex;flex-wrap: wrap;margin-right: auto;font-family:calibri; margin-left:45px}
-  h1 {text-align: center;font-family:calibri}
-  h2{padding: 25px;margin-top:20px; font-family:calibri; color: rgb(0, 0, 0);margin-left: 35px;text-align: center}
-  h3{padding: 25px;margin-top:20px; font-family:calibri; color: rgb(0, 0, 0);margin-left: -25px}
-  p{font-family:calibri}
-  
-  
-  
-  /*Pour centrer le texte*/
-  .centre-texte{text-align: center;font-family:calibri}
-  /*Pour forcer le centrage du texte de niveau Header1 */
- 
-  
-  /*Cela va me servir à 'découper' une ligne*/
-  .pleine-largeur{position: relative;width: 100%;padding-right: 15px;padding-left: 15px;flex: 0 0 100%;max-width: 100%}
-  /*footer*/
-  .texte-footer{color: white;text-align: center} 
-
-
-
-
-
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
 
 /* Conteneur principal */
-.top-navigation-main {
-    background-color: #000000; /* Fond noir */
-    padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  /* Navigation principale */
-  .main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    color: white; /* Texte en blanc */
-  }
-  
-  /* Menu principal */
-  .main-menu {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-  }
-  
-  .menu-item {
-    position: relative;
-    margin-right: 25px;
-  }
-  
-  /* Liens du menu */
-  .top-level-entry {
-    color: white; /* Texte blanc */
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px;
-    display: inline-block;
-  }
-  
-  .top-level-entry:hover {
-    color: rgb(255, 140, 0); /* Bleu au survol */
-  }
-  
-  /* L'élément actif devient gris */
-  .top-level-entry.active {
-    color: rgb(255, 140, 0); /* Gris pour l'élément actif */
-    border-radius: 5px;
-  }
-  
+.container {
+  width: 50%;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  
-  /* Liens dans le sous-menu */
-  .submenu-item {
-    text-decoration: none;
-    color: #000000; /* Texte sombre pour le sous-menu */
-    padding: 8px 15px;
-    display: block;
-  }
-  
-  .submenu-item:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Afficher sous-menu au clic (ajouter la classe .active) */
-  .menu-item.active > .submenu {
-    display: block;
-  }
-  
-  /* Conteneur d'authentification */
-  .auth-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .auth-container .login-link {
-    text-decoration: none;
-    color: #ffffff; /* Bleu pour "Log in" */
-    margin-right: 15px;
-    font-weight: bold;
-  }
-  
-  .auth-container .login-link:hover {
-    text-decoration: underline;
-  }
-  
-  .auth-container .button.primary {
-    background-color: #ffffff; /* Bleu pour "Sign up" */
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .auth-container .button.primary:hover {
-    text-decoration: underline;
-  }
-  
-  .auth-container .button.primary:hover {
-    background-color: #ffffff; /* Couleur plus sombre au survol */
-  }
-  
-  .auth-container .button.primary:active {
-    background-color: #ffffff;
-  }
-  
-  /* Informations de la sous-page */
-  .subpage-info {
-    background-color: #d8ecf5;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .current-page {
-    font-weight: bold;
-    color: rgba(38, 128, 255, 0.927); /* Bleu pour le texte de la sous-page */
-  }
-  
-  /* Ajouter le séparateur entre les éléments */
-.menu-item:not(:last-child)::after {
-    content: '|';
-    color: #999; /* Couleur du séparateur */
-    margin-left: 25px; /* Espacement entre le texte et le séparateur */
-  }
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
 
 
-
-  
-=======
-body {
-    /*color:black;*/
-    background-color:white;
-    /*background-image:url(file:./fond.JPG);
-    background-repeat:repeat;
-    background-attachment: fixed; */
-  }
-  
-  footer{background-color: black;height:60px;margin:60px 0 -10px 0}
-  
-  .contour-titre{background-color: rgb(255, 255, 255); width: 280px;height: 100px;display: block;margin:0 auto;margin-bottom: 30px; font-family:calibri}
-  .titre{font-style: bold; color: rgb(255, 140, 0);padding:30px 40px 25px 40px; font-family:calibri;}
-  .ligne{display: flex;flex-wrap: wrap;margin-right: auto;font-family:calibri; margin-left:45px}
-  h1 {text-align: center}
-  h2{padding: 25px;margin-top:20px; font-family:calibri; color: rgb(0, 0, 0);margin-left: 35px;text-align: center}
-  h3{padding: 25px;margin-top:20px; font-family:calibri; color: rgb(0, 0, 0);margin-left: -25px}
-  
-  font-family:calibri
-  
-  /*Pour centrer le texte*/
-  .centre-texte{text-align: center}
-  /*Pour forcer le centrage du texte de niveau Header1 */
- 
-  
-  /*Cela va me servir à 'découper' une ligne*/
-  .pleine-largeur{position: relative;width: 100%;padding-right: 15px;padding-left: 15px;flex: 0 0 100%;max-width: 100%}
-  /*footer*/
-  .texte-footer{color: white;text-align: center} 
-
-
-
-
-
-
-/* Conteneur principal */
-.top-navigation-main {
-    background-color: #000000; /* Fond noir */
-    padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  /* Navigation principale */
-  .main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    color: white; /* Texte en blanc */
-  }
-  
-  /* Menu principal */
-  .main-menu {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-  }
-  
-  .menu-item {
-    position: relative;
-    margin-right: 25px;
-  }
-  
-  /* Liens du menu */
-  .top-level-entry {
-    color: white; /* Texte blanc */
-    text-decoration: none;
-    font-weight: 600;
-    padding: 10px;
-    display: inline-block;
-  }
-  
-  .top-level-entry:hover {
-    color: rgb(255, 140, 0); /* Bleu au survol */
-  }
-  
-  /* L'élément actif devient gris */
-  .top-level-entry.active {
-    color: rgb(255, 140, 0); /* Gris pour l'élément actif */
-    border-radius: 5px;
-  }
-  
-
-  
-  /* Liens dans le sous-menu */
-  .submenu-item {
-    text-decoration: none;
-    color: #000000; /* Texte sombre pour le sous-menu */
-    padding: 8px 15px;
-    display: block;
-  }
-  
-  .submenu-item:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Afficher sous-menu au clic (ajouter la classe .active) */
-  .menu-item.active > .submenu {
-    display: block;
-  }
-  
-  /* Conteneur d'authentification */
-  .auth-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .auth-container .login-link {
-    text-decoration: none;
-    color: #ffffff; /* Bleu pour "Log in" */
-    margin-right: 15px;
-    font-weight: bold;
-  }
-  
-  .auth-container .login-link:hover {
-    text-decoration: underline;
-  }
-  
-  .auth-container .button.primary {
-    background-color: #ffffff; /* Bleu pour "Sign up" */
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .auth-container .button.primary:hover {
-    text-decoration: underline;
-  }
-  
-  .auth-container .button.primary:hover {
-    background-color: #ffffff; /* Couleur plus sombre au survol */
-  }
-  
-  .auth-container .button.primary:active {
-    background-color: #ffffff;
-  }
-  
-  /* Informations de la sous-page */
-  .subpage-info {
-    background-color: #d8ecf5;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .current-page {
-    font-weight: bold;
-    color: rgba(38, 128, 255, 0.927); /* Bleu pour le texte de la sous-page */
-  }
-  
-  /* Ajouter le séparateur entre les éléments */
-.menu-item:not(:last-child)::after {
-    content: '|';
-    color: #999; /* Couleur du séparateur */
-    margin-left: 25px; /* Espacement entre le texte et le séparateur */
-  }
->>>>>>> e17bf4cfedc5728f9a206bf905fa3e0cfa22ce37

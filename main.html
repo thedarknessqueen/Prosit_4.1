@@ -1,102 +1,101 @@
-<!doctype html>
-<html lang="fr">
-  
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="style.css" >
-        <title>lebonplan</title>
-    
- 
-    
-      <div class="contour-titre">
-        <div class="pleine-largeur centre-texte">
-		<h1 class="titre">lebonplan</h1>
-        </div>
-	  </div>
-	  <div class="top-navigation-main">
-        <nav class="main-nav" aria-label="Main menu">
-          <ul class="main-menu">
-            <li class="menu-item">
-              <a href="file:./main.HTML" class="top-level-entry active">Acceuil</a>
-            </li>
-            <li class="menu-item">
-              <a href="file:./entreprise.HTML" class="top-level-entry">Entreprise</a>
+<!DOCTYPE html>
+  <html lang="fr">
+    <head><!-- haut de la page -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Postuler à une offre de stage</title>
+      <link rel="stylesheet" href="style.css">
+      <div class="logo" style="text-align: center;"> lebonplan</div>
+        <div class="top-navigation-main">
+          <nav class="main-nav" aria-label="Main menu">
+            <ul class="main-menu">
+              <li class="menu-item">
+                <a href="file:./main.HTML" class="top-level-entry active">Acceuil</a>
               </li>
-            <li class="menu-item">
-              <a href="file:./offres.HTML" class="top-level-entry">Offres</a>
-            </li>
-            <li class="menu-item">
-              <a href="file:./wishlist.HTML" class="top-level-entry">Wishlist</a>
-            </li>
-            <li class="menu-item">
-              <a href="file:./contact.HTML" class="top-level-entry">Contact</a>
-            </li>
-           
-          </ul>
-          <div class="auth-container">
-            <a href="file:./connexion.HTML" class="login-link">Connexion  |</a>
-            <a href="file:./sinscrire.HTML" class="button primary mdn-plus-subscribe">S'incrire</a>
-          </div>
-        </nav>
-    </div>
-    <div class="subpage-info">
-        <span class="current-page">Acceuil > </span>
-    </div>
-</head>  
-<body>   
-       
-		
-            <div class="centre-texte">
-		        <h2>Postuler à une offre de stage.</h2> 
+              <li class="menu-item">
+                <a href="file:./entreprise.HTML" class="top-level-entry">Entreprise</a>
+              </li>
+              <li class="menu-item">
+                <a href="file:./offres.HTML" class="top-level-entry">Offres</a>
+              </li>
+              <li class="menu-item">
+                <a href="file:./wishlist.HTML" class="top-level-entry">Wishlist</a>
+              </li>
+              <li class="menu-item">
+                <a href="file:./contact.HTML" class="top-level-entry">Contact</a>
+              </li>
+            </ul>
+            <div class="auth-container">
+              <a href="file:./connexion.HTML" class="login-link">Connexion  |</a>
+              <a href="file:./sinscrire.HTML" class="button primary mdn-plus-subscribe">S'incrire</a>
             </div>
-            <div class="ligne">
-                <p>Vous pouvez ici répondre directement à l'offre de stage qui a été déposé par l'entreprise. Soyez le plus précis possible dans vos réponses ! <p>
-            </div>
-                </div>
-
-        
-          <div class="ligne">
-              <h3>Stage - Administrateur Système et Réseau H/F</h3>
-            </div>
-          </div>
-          <div class="ligne">
-            <div class="pleine-largeur centre-texte">
-            </div>
-          </div>
-          <div class="ligne">
-          <div class="pleine-largeur centre-texte">
-            <p>Texte que j'arrive pas a lire ... </p>
-            </div>
-          </div>
+          </nav>
         </div>
-
-        <div class=">Envoyer">
-         <div class="ligne">
-            <div class="pleine-largeur centre-texte">
-             <h3>Envoyer votre candidature dès maintenant !<h3>
-          </div>
-        <div class="ligne">
-          <div class="pleine-largeur centre-texte">
-          </div>
+        <div class="subpage-info">
+          <span class="current-page">Acceuil > </span>
         </div>
-        <div class="ligne">
-          <div class="pleine-largeur centre-texte">
-            <p>mettre le formulaire ici. </p>
-           </div>
+      </div>
+    </header>
+    <body>
+      <main class="container">
+        <h2>Postuler à une offre de stage</h2>
+        <p>Vous pouvez ici répondre directement à l'offre de stage déposée par l'entreprise.</p>
+        <h3>Stage - Administrateur Système et Réseau H/F</h3>
+        <h4>Résumé de l'offre</h4>
+        <div class ="tags-container">
+          <span class="tag"> 3 mois</span>
+          <span class="tag"> bac+100</span>
         </div>
-    </div>
-</body>
-
-<footer>
-        <div class="ligne">
-          <div class="pleine-largeur">
-            <p class="texte-footer">©2024 - Tous droits réservés</p>
+        <h3>Envoyez votre candidature dès maintenant !</h3>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="civilite">CIVILITÉ</label>
+            <select id="civilite" name="civilite">
+              <option value="madame">Madame</option>
+              <option value="monsieur">Monsieur</option>
+            </select>
           </div>
-        </div> 
-</footer>
-  
-</html>
+          <div class="form-group">
+            <label for="nom">NOM</label>
+            <input type="text" id="nom" name="nom">
+          </div>
+          <div class="form-group">
+            <label for="prenom">PRÉNOM </label>
+            <input type="text" id="prenom" name="prenom">
+          </div>
+          <div class="form-group">
+            <label for="email">COURRIEL</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <fieldset>
+            <legend>À PROPOS DE VOUS</legend>
+            <p><input type="checkbox"> Permis B</p>
+            <p><input type="checkbox">Véhicule</p>
+            <p><input type="checkbox"> Certifications (Microsoft, Cisco...)</p>
+          </fieldset>
+          <form action="traitement.php" method="post">
+            <label>Je suis majeur :</label>
+            <label><input type="radio" name="majeur" value="Oui" required> Oui</label>
+            <label><input type="radio" name="majeur" value="Non" required> Non</label>
+            <br><br>
+          </form>
+          <div class="form-group">
+            <label for="message">VOTRE MESSAGE AU RECRUTEUR</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="cv">CV</label>
+            <input type="file" id="cv" name="cv" style="display: none;">
+            <label for="cv" class="btn-orange" style="color: white; font-weight: bold; display: inline-block; padding: 11px 20px; cursor: pointer;">AJOUTER MON CV</label>
+            <p style="margin-top: 5px;">Poids max: 2Mo<br>Formats: .pdf, .doc, .docx, .odt, .rtf, .jpg ou .png</p>
+          </div>
+          <button type="submit" class="btn-orange">Postuler</button>
+          <button type="submit" class="btn-orange">rénitialiser</button>
 
-
-
+        </form>
+      </main>
+    </body>
+    <footer>
+        <p>© 2025 - Tous droits réservés - WebAdM</p>
+    </footer> 
+  </html>
